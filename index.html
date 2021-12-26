@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1">
+    <meta name="theme-color" content="#FFF8DC">
+    <meta name="og:title" content="Otters">
+    <title>Otters</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            height: 100vh;
+        }
+
+        #main-div {
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            height: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h3 {
+            padding: 20px;
+            margin: 0;
+            font-size: 3vh;
+        }
+
+        #img-div {
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #img-div div {
+            max-height: 100%;
+        }
+
+        #otter-img {
+            max-width: 100%;
+            max-height: 80vh;
+            box-shadow: 1px 1px 0 0 #ffffff inset, 0 2px 3px 0 #B3B3B3;
+        }
+
+        @media screen and (max-width: 950px) {
+            footer {
+                font-size: 1.75vw;
+            }
+        }
+
+        a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #779;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-div">
+        <header>
+            <h3>Take one :)</h3>
+        </header>
+        <div id="img-div">
+            <div>
+                    <img id="otter" src="https://otters.bananonz.dev/otterimg" />
+            </div>
+        </div>
+</body>
+
+</html>
