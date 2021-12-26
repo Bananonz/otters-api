@@ -6,12 +6,10 @@ function see(q) {
     return q[Math.floor(Math.random()*q.length)];
 }
 
-app.get('/', (req, res) => {
-  const a = require("./assets/otters.json").otters
-  res.json({"/otter": "to get a otter", "link": see(a), "db": `${a.length}`})                                            
+app.get('/', function(req, res) {
+  res.sendFile(require("path").join(__dirname, '/index.html'));
   count.add(`reqs`, 1)
-  count.add(`reqsotters`, 1)
-})
+});
 
 app.get('/otter', (req, res) => {
   const a = require("./assets/otters.json").otters
